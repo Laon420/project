@@ -33,10 +33,18 @@ namespace Project1
 
         private void buttonNext2_Click(object sender, EventArgs e)
         {
-            if(radioButtonYes.Checked==false && radioButtonNo.Checked == false && checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false && checkBox4.Checked == false)
+            warningForm w= new warningForm();
+            if(radioButtonYes.Checked==false && radioButtonNo.Checked == false)
             {
-                warningForm w = new warningForm();
                 w.ShowDialog();
+            }
+            else if(checkBox1.Checked == false && checkBox2.Checked == false && checkBox3.Checked == false && checkBox4.Checked == false)
+            {
+                w.ShowDialog();
+            }
+            else if(checkBox4.Checked == true && textBox1.Text == "")
+            {
+                    w.ShowDialog();
             }
             else
             {

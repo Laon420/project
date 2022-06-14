@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButtonThird3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonThird2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonThird1 = new System.Windows.Forms.RadioButton();
             this.radioButtonseconddislike = new System.Windows.Forms.RadioButton();
             this.radioButtonSecondlike = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonNext2 = new System.Windows.Forms.Button();
+            this.radioButtonThird1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonThird2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonThird3 = new System.Windows.Forms.RadioButton();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,39 +52,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "3. 운동을 어디서 하십니까?";
-            // 
-            // radioButtonThird3
-            // 
-            this.radioButtonThird3.AutoSize = true;
-            this.radioButtonThird3.Location = new System.Drawing.Point(388, 60);
-            this.radioButtonThird3.Name = "radioButtonThird3";
-            this.radioButtonThird3.Size = new System.Drawing.Size(161, 16);
-            this.radioButtonThird3.TabIndex = 3;
-            this.radioButtonThird3.TabStop = true;
-            this.radioButtonThird3.Text = "전문 운동시설(헬스장 등)";
-            this.radioButtonThird3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonThird2
-            // 
-            this.radioButtonThird2.AutoSize = true;
-            this.radioButtonThird2.Location = new System.Drawing.Point(256, 60);
-            this.radioButtonThird2.Name = "radioButtonThird2";
-            this.radioButtonThird2.Size = new System.Drawing.Size(51, 16);
-            this.radioButtonThird2.TabIndex = 2;
-            this.radioButtonThird2.TabStop = true;
-            this.radioButtonThird2.Text = "집 안";
-            this.radioButtonThird2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonThird1
-            // 
-            this.radioButtonThird1.AutoSize = true;
-            this.radioButtonThird1.Location = new System.Drawing.Point(80, 60);
-            this.radioButtonThird1.Name = "radioButtonThird1";
-            this.radioButtonThird1.Size = new System.Drawing.Size(101, 16);
-            this.radioButtonThird1.TabIndex = 1;
-            this.radioButtonThird1.TabStop = true;
-            this.radioButtonThird1.Text = "야외(산, 공원)";
-            this.radioButtonThird1.UseVisualStyleBackColor = true;
             // 
             // radioButtonseconddislike
             // 
@@ -127,6 +94,36 @@
             this.buttonNext2.UseVisualStyleBackColor = true;
             this.buttonNext2.Click += new System.EventHandler(this.buttonNext2_Click);
             // 
+            // radioButtonThird1
+            // 
+            this.radioButtonThird1.AutoSize = true;
+            this.radioButtonThird1.Location = new System.Drawing.Point(89, 60);
+            this.radioButtonThird1.Name = "radioButtonThird1";
+            this.radioButtonThird1.Size = new System.Drawing.Size(101, 16);
+            this.radioButtonThird1.TabIndex = 4;
+            this.radioButtonThird1.Text = "야외(산, 공원)";
+            this.radioButtonThird1.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonThird2
+            // 
+            this.radioButtonThird2.AutoSize = true;
+            this.radioButtonThird2.Location = new System.Drawing.Point(265, 60);
+            this.radioButtonThird2.Name = "radioButtonThird2";
+            this.radioButtonThird2.Size = new System.Drawing.Size(51, 16);
+            this.radioButtonThird2.TabIndex = 5;
+            this.radioButtonThird2.Text = "집 안";
+            this.radioButtonThird2.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonThird3
+            // 
+            this.radioButtonThird3.AutoSize = true;
+            this.radioButtonThird3.Location = new System.Drawing.Point(403, 60);
+            this.radioButtonThird3.Name = "radioButtonThird3";
+            this.radioButtonThird3.Size = new System.Drawing.Size(161, 16);
+            this.radioButtonThird3.TabIndex = 6;
+            this.radioButtonThird3.Text = "전문 운동시설(헬스장 등)";
+            this.radioButtonThird3.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -149,12 +146,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButtonThird3;
-        private System.Windows.Forms.RadioButton radioButtonThird2;
-        private System.Windows.Forms.RadioButton radioButtonThird1;
         private System.Windows.Forms.RadioButton radioButtonseconddislike;
         private System.Windows.Forms.RadioButton radioButtonSecondlike;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonNext2;
+        private System.Windows.Forms.RadioButton radioButtonThird1;
+        private System.Windows.Forms.RadioButton radioButtonThird3;
+        private System.Windows.Forms.RadioButton radioButtonThird2;
     }
 }

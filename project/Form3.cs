@@ -19,7 +19,12 @@ namespace Project1
 
         private void buttonNext2_Click(object sender, EventArgs e)
         {
-            if((radioButtonseconddislike.Checked == false) && (radioButtonSecondlike.Checked == false) && (radioButtonThird1.Checked == false) && (radioButtonThird2.Checked == false) && (radioButtonThird3.Checked == false))
+            if(radioButtonSecondlike.Checked ==false && radioButtonseconddislike.Checked == false)
+            {
+                warningForm w = new warningForm();
+                w.ShowDialog();
+            }
+            else if(radioButtonThird1.Checked == false && radioButtonThird2.Checked == false && radioButtonThird3.Checked == false)
             {
                 warningForm w = new warningForm();
                 w.ShowDialog();

@@ -53,7 +53,7 @@
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // Form2
+            // warningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -61,8 +61,9 @@
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "warningForm";
+            this.Text = "warning";
+            this.Load += new System.EventHandler(this.warningForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

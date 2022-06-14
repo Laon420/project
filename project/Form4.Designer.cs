@@ -33,13 +33,13 @@
             this.radioButtonNo = new System.Windows.Forms.RadioButton();
             this.radioButtonYes = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonNext2 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.buttonNext2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,6 @@
             this.radioButtonNo.Name = "radioButtonNo";
             this.radioButtonNo.Size = new System.Drawing.Size(59, 16);
             this.radioButtonNo.TabIndex = 2;
-            this.radioButtonNo.TabStop = true;
             this.radioButtonNo.Text = "아니요";
             this.radioButtonNo.UseVisualStyleBackColor = true;
             // 
@@ -73,7 +72,6 @@
             this.radioButtonYes.Name = "radioButtonYes";
             this.radioButtonYes.Size = new System.Drawing.Size(35, 16);
             this.radioButtonYes.TabIndex = 1;
-            this.radioButtonYes.TabStop = true;
             this.radioButtonYes.Text = "네";
             this.radioButtonYes.UseVisualStyleBackColor = true;
             // 
@@ -92,45 +90,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "4. 운동을 하시는 이유(복수 선택 가능)";
             // 
-            // buttonNext2
+            // label1
             // 
-            this.buttonNext2.Location = new System.Drawing.Point(353, 379);
-            this.buttonNext2.Name = "buttonNext2";
-            this.buttonNext2.Size = new System.Drawing.Size(85, 28);
-            this.buttonNext2.TabIndex = 5;
-            this.buttonNext2.Text = "다음";
-            this.buttonNext2.UseVisualStyleBackColor = true;
-            this.buttonNext2.Click += new System.EventHandler(this.buttonNext2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 12);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "기타 :";
+            this.label1.Visible = false;
             // 
-            // checkBox1
+            // textBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(49, 53);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(76, 16);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "건강 유지";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(194, 53);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(64, 16);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "살 빼기";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(344, 53);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(76, 16);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "몸 만들기";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(111, 87);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(290, 21);
+            this.textBox1.TabIndex = 7;
+            this.textBox1.Visible = false;
             // 
             // checkBox4
             // 
@@ -143,23 +119,45 @@
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
-            // textBox1
+            // checkBox3
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 21);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Visible = false;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(344, 53);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(76, 16);
+            this.checkBox3.TabIndex = 5;
+            this.checkBox3.Text = "몸 만들기";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // checkBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 12);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "기타 :";
-            this.label1.Visible = false;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(194, 53);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(64, 16);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.Text = "살 빼기";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(49, 53);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(76, 16);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "건강 유지";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // buttonNext2
+            // 
+            this.buttonNext2.Location = new System.Drawing.Point(353, 379);
+            this.buttonNext2.Name = "buttonNext2";
+            this.buttonNext2.Size = new System.Drawing.Size(85, 28);
+            this.buttonNext2.TabIndex = 5;
+            this.buttonNext2.Text = "다음";
+            this.buttonNext2.UseVisualStyleBackColor = true;
+            this.buttonNext2.Click += new System.EventHandler(this.buttonNext2_Click);
             // 
             // Form4
             // 

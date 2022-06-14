@@ -21,5 +21,10 @@ namespace Project1
         {
             Close();
         }
+
+        private void warningForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
