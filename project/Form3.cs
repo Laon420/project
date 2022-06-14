@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project1
@@ -19,12 +12,12 @@ namespace Project1
 
         private void buttonNext2_Click(object sender, EventArgs e)
         {
-            if(radioButtonSecondlike.Checked ==false && radioButtonseconddislike.Checked == false)
+            if (radioButtonSecondlike.Checked == false && radioButtonseconddislike.Checked == false)
             {
                 warningForm w = new warningForm();
                 w.ShowDialog();
             }
-            else if(radioButtonThird1.Checked == false && radioButtonThird2.Checked == false && radioButtonThird3.Checked == false)
+            else if (radioButtonThird1.Checked == false && radioButtonThird2.Checked == false && radioButtonThird3.Checked == false)
             {
                 warningForm w = new warningForm();
                 w.ShowDialog();

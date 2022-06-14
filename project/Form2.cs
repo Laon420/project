@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project1
@@ -15,7 +8,7 @@ namespace Project1
         public Form2()
         {
             InitializeComponent();
-            
+
         }
 
         private void buttonNext2_Click(object sender, EventArgs e)
@@ -25,9 +18,9 @@ namespace Project1
                 warningForm w = new warningForm();
                 w.ShowDialog();
             }
-            else if((radioButtonFirst4.Checked == true))
+            else if ((radioButtonFirst4.Checked == true))
             {
-                if((radioButtonFirstChecked1.Checked == false)&& radioButtonFirstChecked2.Checked == false)
+                if ((radioButtonFirstChecked1.Checked == false) && radioButtonFirstChecked2.Checked == false)
                 {
                     warningForm w = new warningForm();
                     w.ShowDialog();
@@ -65,12 +58,12 @@ namespace Project1
                 radioButtonFirstChecked1.Enabled = false;
             }
 
-           
+
         }
 
         private void radioButtonFirst4_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
